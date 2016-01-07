@@ -46,22 +46,444 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+*{
+	box-sizing : border-box;
+	-moz-box-sizing : border-box;
+	-webkit-box-sizing : border-box;
+	-ms-box-sizing : border-box;
+}
+/*----------------------------------------------------font--------------------------------------------*/
+@font-face {
+    font-family : "hpSimp";
+    src   	          : url("../assets/fonts/HPSimplified_Rg.ttf");
+}
+@font-face {
+    font-family : "hpSimp";
+    font-style   : italic;
+    src             : url("../assets/fonts/HPSimplified_It.ttf");
+}
+@font-face {
+    font-family  : "hpSimp";
+    font-weight : bold;
+    src               : url("../assets/fonts/HPSimplified_Bd.ttf");
+}
+@font-face {
+    font-family : "hpSimpLight";
+    src             : url("../assets/fonts/HPSimplified_Lt.ttf");
+}
+@font-face {
+    font-family : "hpSimpLight";
+    font-style   : italic;
+    src             : url("../assets/fonts/HPSimplified_LtIt.ttf");
+}
+@font-face {
+    font-family  : "hpSimpLight";
+    font-weight : bold;
+    src              : url("../assets/fonts/HPSimplified_BdIt.ttf");
+}
 /*---------------------------------------------------html-----------------------------------------*/
-html{
-	font-size : 0.625rem;
+html{	
+	font-family : "hpSimp", verdana ;
+	font-size    : 0.6rem;
 }
 body{
 	font-size : 1.6em;
 }
 .wrapper{
-	max-width : 1200px;
-	margin : 0 auto;
+	position: relative;
+	max-width : 1280px;
+	margin 	     : 0 auto;
 }
 /*--------------------------------------------------------------slider----------------------------------*/
 .swiper-container {
-    width: 100%;
-    height: 762px;
+
+    width             : 100%;
+    height 	: 762px;
 }
-.module_slider{
+.slide1{
 	background : url('../assets/slide.jpg') no-repeat 50% 0;
-} 
+}
+.module_slider {
+	text-align : center;
+}
+.module_slider .main-title{
+	line-height              : 9rem; 
+	font-size                 : 4.575rem;
+	color                       : white;
+	text-align                : center;
+	display                   : inline-block;
+	background-color  : black;
+	margin-top              : 34rem;
+	padding                  : 0 0.4rem 0 0.4rem;
+
+}
+.module_slider .slide1 a{
+
+	display                  : block;
+	text-decoration     : none;
+	color                      : white;
+	font-size                : 3.5rem;  
+	background-color : #009aa6;
+	margin                   : auto auto;
+	width                      : 20.5rem;
+	margin-top             : 8rem;
+	line-height              : 7.5rem; 
+	border-radius         : 0.5rem; 
+}
+.module_slider .bt_left{
+	background : url('../assets/bt_left.png') no-repeat;
+	opacity         : 0.5;
+	width             : 8.6rem;
+	min-height    : 8.5rem;
+	position         : absolute;
+	z-index         : 22;
+	top                : 34rem;
+	left                : 2rem;
+}
+.module_slider .bt_right{
+	background : url('../assets/bt_right.png') no-repeat;
+	opacity         : 0.5;
+	width             : 8.6rem;
+	min-height    : 8.5rem;
+	position         : absolute;
+	z-index          : 22;
+	top                 : 34rem;
+	right               : 0;
+}
+/*-------------------------------------------------------------------------------nav--------------------------------------*/
+.main-nav {
+	text-align : center
+
+}
+.main-nav li {
+
+	display  : inline-block;
+	padding : 0 4.5% 0 2%;
+	
+}
+.main-nav .logo_nav{
+}
+.main-nav a {
+	display            : block;
+	text-decoration : none;
+	color               : #6b6b6b;
+	font-size          : 2.2rem;
+	line-height        : 2;
+
+}
+/*------------------------------------------------------------------services--------------------------------*/
+
+.module_services .services_title{
+	padding-top   : 10.1rem;
+	text-align        : center;
+	font-size         : 3.3rem;	
+	text-transform : uppercase;
+}
+.module_services  .services_slogan{
+	font-family      : "hpSimpLight";
+	font-size  : 1.7rem;
+	color       : #434242;
+	text-align  : center;
+	padding   : 2.5rem 0 6.3rem 0;
+}
+.module_services .service{
+	padding-bottom: 1.5rem;
+	font-family: "hpSimpLight";
+	font-size: 1.9rem;
+}
+.module_services .service_image{
+	float: right;
+	background: url('../assets/w3Goods.jpg') no-repeat;
+	width: 62.4rem;
+	height: 38.4rem;
+}
+.service_list li{
+	padding-bottom: 3.8rem;
+
+}
+.service_list p{
+	font-family      : "hpSimpLight";
+	font-size  : 1.7rem;
+	color       : #434242;
+}
+.service_list li:nth-child(1) div{
+	margin-right: 3.2rem;
+	float: left;
+	height: 5.2rem;
+	width: 3.6rem;
+	background: url('../assets/service1.jpg')no-repeat;
+
+}
+.service_list li:nth-child(2) div{
+	margin-right: 3.2rem;
+	float: left;
+	height: 5.2rem;
+	width: 3.6rem;
+	background: url('../assets/service2.jpg')no-repeat;
+
+}
+.service_list li:nth-child(3) div{
+	margin-right: 3.2rem;
+	float: left;
+	height: 5.2rem;
+	width: 3.4rem;
+	background: url('../assets/service3.jpg')no-repeat;
+
+}
+.service_list li:nth-child(4) div{
+	margin-right: 3.2rem;
+	float: left;
+	height: 5.4rem;
+	width: 4.2rem;
+	background: url('../assets/service4.jpg')no-repeat;
+
+}
+.left{
+	float: left;
+}
+.module_portfolio {
+	clear: both;
+}
+/*-----------------------------------------------------------------portfolio---------------------------------------*/
+.module_portfolio .portfolio_title{
+	padding-top   : 10.1rem;
+	text-align        : center;
+	font-size         : 3.3rem;	
+	text-transform : uppercase;
+}
+.module_portfolio .portfolio_slogan{
+	font-family      : "hpSimpLight";
+	font-size  : 1.7rem;
+	color       : #434242;
+	text-align  : center;
+	padding   : 2.5rem 0 5.0rem 0;	
+}
+.module_portfolio .filter_portfolio{
+	text-align: center;
+}
+.module_portfolio .filter_portfolio li{
+	display: inline-block;
+	padding: 0 3% 5rem 0;
+}
+.module_portfolio .filter_portfolio li a{
+	display:  block;
+	line-height: 2;
+	text-decoration: none;
+	color : black;
+}
+.module_portfolio .list_portfolio li{
+	display:  inline-block;
+	padding-right: 1.4rem;
+}
+.module_portfolio .portfolio{
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 1.8rem;
+	padding: 1.6rem 0 1.6rem 0;
+}
+.module_portfolio p{
+	text-align: center;
+	font-size: 1.5rem;
+	color: #434242;
+	padding-bottom: 4.5rem;
+}
+.module_commend{
+	text-align: center;
+	margin-top: 15rem;
+	background: url('../assets/commendBanier.jpg') no-repeat 50% 50%;
+	color: white;
+}
+.module_commend p{
+	display: block;
+	width: 75%;
+	margin : 0 auto;
+	font-style: italic;
+	padding: 30rem 0 4.5rem 0 ;
+	font-size : 2.9rem;
+	line-height: 3rem;
+}
+.commend_profile img{
+	border-radius : 50%;
+}
+.commend_profile h3{
+	font-size: 1.9rem;
+	padding-top: 0.5rem;
+	text-transform: uppercase;
+}
+.commend_profile p{
+	padding: 0 0 5rem 0;
+	font-size: 1.6rem;
+	line-height: 1;
+}
+.commend_client {
+	background-color: #009aa6;
+	text-align: center;
+}
+.commend_client li{
+
+	display : inline-block;
+	padding-right: 3.5%;
+}
+.commend_client a{
+	padding: 1.4rem 2rem 1rem 0;
+	line-height: 4rem;
+	display: block;
+	
+}
+/*-----------------------------------------------------------------------------Team----------------------------------- */
+.module_team{
+
+}
+.module_team .team_title{
+	padding-top   : 10.1rem;
+
+	text-align        : center;
+	font-size         : 3.3rem;	
+	text-transform : uppercase;
+}
+.module_team .team_slogan{
+	font-family      : "hpSimpLight";
+	font-size  : 1.7rem;
+	color       : #434242;
+	text-align  : center;
+	padding   : 2.5rem 0 5.0rem 0;	
+}
+.module_team .team_list{
+	text-align: center;
+}
+.module_team .team_list li{
+	width: 33%;
+	display: inline-block;
+}
+.module_team .team_list .team{
+	
+	font-size: 2.2rem;
+	padding : 2.9rem 0  2rem 0;
+}
+.module_team .team_list p{
+	font-family: Arial;
+	display: block;
+	font-size: 1.4rem;
+	color: #676666;
+	line-height: 4.6rem;
+	width: 90%;
+	margin: 0 auto;
+	
+}
+.module_team .team_list .work{
+	font-family: Arial;
+	font-size: 1.5rem;
+	color: #676666;
+	padding-bottom: 1rem;
+}
+/*------------------------------------------------------------------------talking------------------------------------------*/
+.module_talking{
+	font-family: arial;
+	margin-top: 14.2rem;
+	background: url("../assets/talk.jpg") no-repeat 0 0;
+}
+.module_talking .talking_title{
+	text-transform: uppercase;
+	font-weight: blod;
+	font-size: 4.1rem;
+	text-align: center;
+	color: white;
+	padding: 15rem 0 20.0rem 0;	
+}
+.module_talking .info{
+	padding-left: 8%;
+	width: 50%;
+	font-size: 2.0rem;
+	color: #8b8b8b;
+}
+.module_talking .info b{
+	font-size: 2.0rem;
+	font-weight: bold;
+	display: block;
+	color: black;
+	width: 15%;
+}
+.module_talking .info p{
+	padding-left: 3.0rem;
+	padding-bottom: 2rem;
+}
+.module_talking .info span{
+	padding-left: 10%;
+}
+.module_talking .info .underline{
+	padding-left: 25%;
+	display: block;
+}
+.module_talking .info p:nth-child(1){
+	background: url('../assets/adress.jpg') no-repeat;
+
+}
+.module_talking .info p:nth-child(2){
+	background: url('../assets/tel.jpg') no-repeat;
+
+}
+.module_talking .info p:nth-child(3){
+	background: url('../assets/email.jpg') no-repeat;
+
+}
+.module_talking .info p:nth-child(4){
+	background: url('../assets/hour.jpg') no-repeat;
+
+}
+.module_talking .info .social_list{
+	padding: 2rem 0 0 5%;
+}
+form{
+	float: right;
+	width: 38%;
+	margin-right: 5%;
+
+}
+input{
+	font-size: 1.7rem;
+	line-height: 5rem;
+	padding-left: 2.0rem;
+	border-radius: 0.1rem;
+	margin-bottom: 1.4rem;
+	width: 100%;
+	box-shadow: none;
+	border: solid 0.1rem #b4b4b4;
+}
+textarea{
+	font-family: arial;
+	font-size: 1.7rem;
+	line-height: 5rem;
+	padding-left: 2.0rem;
+	border-radius: 0.1rem;
+	margin-bottom: 1.4rem;
+	width: 100%;
+	box-shadow: none;
+	border: solid 0.1rem #b4b4b4;
+	height: 15.9rem;	
+}
+button{
+	font-size: 1.7rem;
+	text-transform: uppercase;
+	border-radius: 0.5rem;
+	line-height: 5rem;
+	text-align: center;
+	width: 17.7rem;
+	background-color: #009aa6;
+	color: white;
+	border : 1px;
+	margin-bottom: 11.6rem;
+
+}
+.main_footer{
+	padding: 5.3rem 0 3.6rem 0;
+	text-align: center;
+	color: white;
+	background-color: black;
+	line-height: 4rem;
+	clear: both;
+	font-size: 1.5rem;
+	font-family: arial;
+	
+}
+
+
